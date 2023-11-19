@@ -3,7 +3,10 @@ p {
     font-family: "BarlowSemiC";  
 
 }
-
+img {
+  width: 100%;
+  height: 100%;
+}
 * {
 
     box-sizing: border-box;
@@ -83,7 +86,7 @@ nav a {
 
 section {
 
-    border: 2px solid rgba(255, 255, 255, 0.881);
+    border: 2px solid rgba(255, 255, 255, 1.0);
     border-radius: 25px;
     padding: 20px;
     margin-top: 2%;
@@ -92,18 +95,17 @@ section {
 }
 
 section .First-grid {
-
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1fr 1fr 1fr 1fr);
+    grid-template-columns: auto auto;
     gap: 5px;
 }
+
 
 section .First-grid div:nth-of-type(1) {
 
     color: rgba(9, 7, 7, 0.637);
     grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-row: 1 / 2;         
 }
 
 
@@ -111,7 +113,7 @@ h2 {
 
     font-size: 40px;
     font-family: "BungeeOutline";
-    margin: 0px;
+    margin: 1px;
     color: rgb(40, 13, 36);
 }
 
@@ -128,7 +130,6 @@ section .First-grid div:nth-of-type(2) {
     color: rgb(5, 3, 5);
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-
 }
 
 section .First-grid div:nth-of-type(2) ul {
@@ -142,17 +143,16 @@ section .First-grid div:nth-of-type(2) ul {
 section .First-grid div:nth-of-type(2) p {
 
     margin-bottom: 0;
+
 }
 
 section .First-grid div:nth-of-type(3) {
-    height: 430px;
-    width: 100%;
     position: relative;
     grid-column: 4 / 6;
     grid-row: 1 / 3;
 }
 
-/*  Images box - first album box */
+/*  Images box - first and second album box*/
 
 section .First-grid div:nth-of-type(3) > div {
 
@@ -161,7 +161,7 @@ section .First-grid div:nth-of-type(3) > div {
     background-repeat: no-repeat;
     transition: opacity 2s;
 	border-radius: 15px 15px 0 0; 
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
@@ -173,12 +173,19 @@ section .First-grid div:nth-of-type(3) > div {
 section:first-child .First-grid div:nth-of-type(3) > div:first-child {
 
     background-image: url(img/Jungkook1.jpeg);
+
+
+    align-content: center; 
 }
 
 
 section:last-child .First-grid div:nth-of-type(3) > div:first-child {
 
     background-image: url(img/Jungkook4.jpeg);
+
+
+    align-content: center; 
+    
 }
 
 
@@ -186,14 +193,18 @@ section:first-child .First-grid div:nth-of-type(3) > div:last-child  {
 
     background-image: url(img/Jungkook2.jpg);
 
-    opacity: 0;  
+
+    opacity: 0;
+    align-content: center;   
 }
 
 section:last-child .First-grid div:nth-of-type(3) > div:last-child  {
 
     background-image: url(img/Jungkook5.jpg);
 
+
     opacity: 0; 
+    align-content: center; 
 }
 
 
@@ -218,6 +229,7 @@ section:first-child .First-grid div:nth-of-type(5) {
     padding: 5px;
     border-radius: 0 0 15px 0;
     background-color: rgb(105, 66, 98);
+    
     grid-column: 5 / 6;
     grid-row: 3 / 4;
 
@@ -227,7 +239,7 @@ section:first-child .First-grid h3 {
 
     color: rgb(255, 255, 255);
     font-family: "BarlowReg";
-    margin: 2% 0 0 2%;
+    margin: 2% 0 0 2%; 
 }
 
 section:first-child .First-grid ol li {
@@ -244,6 +256,7 @@ section:last-child .First-grid div:nth-of-type(4) {
     background-color: rgb(80, 10, 59);
     grid-column: 4 / 5;
     grid-row: 3 / 4;
+    
 }
 
 
@@ -276,17 +289,17 @@ section .Second-grid {
 
     gap: 5px;
     margin-top: 5px;
-    display: grid;
+    display: grid;      
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
 }
 
 section:first-child .Second-grid div:nth-of-type(1) {
-
+    
 	border-radius: 15px 0 15px 15px;
     background-color: rgba(74, 70, 73, 0.82);
     padding: 10px;
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
 
@@ -315,17 +328,18 @@ section:first-child .Second-grid div:nth-of-type(3) p {
 
     z-index: 100;
     color: rgb(250, 249, 250);
-    position: absolute; 
+    position: relative; 
     margin: 0;
     top: 70%;
-    left: 15%;
-}
 
+}
+/*first section, second row last box*/
 section:first-child .Second-grid div:nth-of-type(4) {
 
 	border-radius: 15px 15px 0 15px;
     background-color: rgba(74, 70, 73, 0.82);
-    padding: 10px;
+    padding: 5px;  
+
     grid-column: 6 / 7;
     grid-row: 1 / 2;
 
@@ -338,17 +352,18 @@ section:first-child .Second-grid div p {
 }
 
 /*   Boxes and images second section */
-
+/*second section, first row, second box*/
 section:last-child .Second-grid div:nth-of-type(1) {
 
-	border-radius: 15px 15px 15px 0;
+	border-radius: 15px 15px 15px 0px;
     background-color: rgb(156, 139, 155);
     padding: 10px;
+    grid-template-columns: auto auto;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 
 }
-
+/*second section, second row, second box*/
 section:last-child .Second-grid div:nth-of-type(2) {
 
     border-bottom-right-radius: 20px;
@@ -366,7 +381,7 @@ section:last-child .Second-grid p {
     color: rgb(247, 248, 249);
 
 }
-
+/*second section, second row, third box with picture*/
 section:last-child .Second-grid div:nth-of-type(3) {
 
     border-bottom-right-radius: 20px;
@@ -380,8 +395,9 @@ section:last-child .Second-grid div:nth-of-type(3) {
     grid-column: 4 / 6;
     grid-row: 1 / 2;
 
-}
 
+}
+/*second section, second row, third box with picture, text format*/
 section:last-child .Second-grid div:nth-of-type(3) p {
 
     z-index: 100;
@@ -399,10 +415,9 @@ section:last-child .Second-grid div:nth-of-type(4) {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     background-color: rgb(156, 139, 155);
-    padding: 5px;
     grid-column: 6 / 7;
     grid-row: 1 / 2;
-
+    padding: 10px;
 }
 
 footer p {

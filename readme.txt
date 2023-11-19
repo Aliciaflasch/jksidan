@@ -4,8 +4,10 @@ Tidigare ändringar
 3: Meny inlagd
 4: Viss text och vissa bilder inlagda
 5: Fonts, mobil css inlagda men ingen bakgrund eller footer
+6: Resterande saker inlagda inkl. bakgrund
 
 
-Ändringar denna version (6): 
-- Bakgrund inlagd och "fixad"
-- footer inlagd och stylad
+Ändringar denna version (7): 
+- Ändring så att sidan slutar förändras efter 1200px
+- Fyrkantiga boxar
+- Fonts ändrar sig när sidan blir mindre eller större
