@@ -1,3 +1,8 @@
+p {
+
+    font-family: "BarlowSemiC";  
+
+}
 
 * {
 
@@ -15,9 +20,10 @@ body {
 .Background {
 
     h1 { 
-        font-size: 80px;
+        font-family: "BungeeShade";
+        font-size: 75px;
         margin-bottom: 10px;
-        margin-top: 20px; 
+        margin-top: -50px; 
         color: rgb(253, 251, 253); 
     }
 
@@ -68,6 +74,7 @@ nav a {
     border-radius: 15px;
     text-align: center;
     text-decoration: none;
+    font-family: "BarlowSemiC";
 }
 
 section {
@@ -99,6 +106,7 @@ section .First-grid div:nth-of-type(1) {
 h2 {
 
     font-size: 40px;
+    font-family: "BungeeOutline";
     margin: 0px;
     color: rgb(40, 13, 36);
 }
@@ -106,6 +114,7 @@ h2 {
 
 h2 + p {
     font-size: 25px;
+    font-family: "BarlowReg";
     margin: 5px;
 }
 
@@ -120,6 +129,7 @@ section .First-grid div:nth-of-type(2) {
 
 section .First-grid div:nth-of-type(2) ul {
 
+    font-family: "BarlowSemiC";
     list-style: none;
     margin: 0 5% 10% 0;
 
@@ -212,12 +222,14 @@ section:first-child .First-grid div:nth-of-type(5) {
 section:first-child .First-grid h3 {
 
     color: rgb(255, 255, 255);
+    font-family: "BarlowReg";
     margin: 2% 0 0 2%;
 }
 
 section:first-child .First-grid ol li {
 
     color: rgb(255, 255, 255);
+    font-family: "BarlowSemiC";
 }
 
 
@@ -244,12 +256,14 @@ section:last-child .First-grid div:nth-of-type(5) {
 section:last-child .First-grid h3 {
 
     color: rgb(255, 255, 255);
+    font-family: "BarlowReg";
     margin: 2% 0 0 2%; 
 }
 
 section:last-child .First-grid ol li {
 
     color: rgb(255, 255, 255);
+    font-family: "BarlowSemiC";
 }
 
 /*   Boxes and images first section  */
