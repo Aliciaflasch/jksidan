@@ -158,18 +158,29 @@ section .First-grid div:nth-of-type(3) > div {
 
 section:first-child .First-grid div:nth-of-type(3) > div:first-child {
 
-
+    background-image: url(img/Jungkook1.jpeg);
 }
 
 
 section:last-child .First-grid div:nth-of-type(3) > div:first-child {
 
-
+    background-image: url(img/Jungkook4.jpeg);
 }
 
 
+section:first-child .First-grid div:nth-of-type(3) > div:last-child  {
 
+    background-image: url(img/Jungkook2.jpg);
 
+    opacity: 0;  
+}
+
+section:last-child .First-grid div:nth-of-type(3) > div:last-child  {
+
+    background-image: url(img/Jungkook5.jpg);
+
+    opacity: 0; 
+}
 
 
 section .First-grid div:nth-of-type(3):hover > div:last-child{
