@@ -11,8 +11,12 @@ p {
 }
 
 body {
+    background-image: url(img/Jungkook3.jpg);
     margin: 0;
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Bakground webb */
@@ -401,4 +405,10 @@ section:last-child .Second-grid div:nth-of-type(4) {
 
 }
 
+footer p {
+
+    padding-left: 1%;
+    color: rgb(244, 238, 238);
+    font-family: "BarlowSemiC";
+}
 

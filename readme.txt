@@ -3,7 +3,9 @@ Tidigare ändringar
 2: Har skapat två sektioner och lagt in lite text, dock inga bilder bilder
 3: Meny inlagd
 4: Viss text och vissa bilder inlagda
+5: Fonts, mobil css inlagda men ingen bakgrund eller footer
 
-Ändringar denna version (4): 
-- Viss text inlagd 
-- Vissa bilder inlagda
+
+Ändringar denna version (6): 
+- Bakgrund inlagd och "fixad"
+- footer inlagd och stylad
